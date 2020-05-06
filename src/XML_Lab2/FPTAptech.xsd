@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="https://www.codelean.vn"
+            xmlns="https://www.codelean.vn"
+            elementFormDefault="qualified">
+    <xsd:element name="Student">
+        <xsd:complexType>
+            <xsd:attribute type=""
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                    <xsd:enumeration value="female"/>
+                    <xsd:enumeration value="male"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:sequence>
+
+                <xsd:element name="Name">
+                    <xsd:simpleType>
+                        <xsd:all>
+                            <xsd:element name="firstName"/>
+                            <xsd:element name="lastName"/>
+                        </xsd:all>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Age" type="xsd:int"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+
+
+
+</xsd:schema>
