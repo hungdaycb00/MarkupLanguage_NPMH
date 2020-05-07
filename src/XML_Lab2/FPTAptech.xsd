@@ -3,17 +3,43 @@
             targetNamespace="https://www.codelean.vn"
             xmlns="https://www.codelean.vn"
             elementFormDefault="qualified">
-    <xsd:element name="Student">
-        <xsd:attribute name="Sex" type="xsd:string"/>
+    <xsd:annotation>
+        <xsd:documentation>
+            Do It Your Self
+        </xsd:documentation>
+    </xsd:annotation>
+    <xsd:element name="FPTAptech">
         <xsd:complexType>
-
             <xsd:sequence>
-                <xsd:element name="Name" type="xsd:string">
-
-                </xsd:element>
+                <xsd:element name="Student" type="studentType" maxOccurs="unbounded"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
+    <xsd:complexType name="studentType">
+        <xsd:sequence>
+            <xsd:element name="Name" type="nameType"></xsd:element>
+            <xsd:element name="Age" type="ageType"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="Sex" type="SexType"></xsd:attribute>
+    </xsd:complexType>
+    <xsd:simpleType name="SexType">
+        <xsd:restriction base="xsd:string">
+<!--            <xsd:enumeration value="male"></xsd:enumeration>-->
+<!--            <xsd:enumeration value="female"></xsd:enumeration>-->
+            <xsd:pattern value="Male|Female"></xsd:pattern>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:complexType name="nameType">
+        <xsd:sequence>
+            <xsd:element name="FName" type="xsd:string"></xsd:element>
+            <xsd:element name="LName" type="xsd:string"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:simpleType name="ageType">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="14"></xsd:minInclusive>
+        </xsd:restriction>
+    </xsd:simpleType>
 
 
 </xsd:schema>

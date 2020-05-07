@@ -4,14 +4,13 @@
         <html>
             <body>
                 <h2>Employee</h2>
-                <table border="1" background-color="yellow">
+                <table border="1">
                    <tr bgcolor="#32a852">
                        <th>ID</th>
                        <th>First Name</th>
                        <th>Last Name</th>
                        <th>Nick Name</th>
                        <th>Salary</th>
-                       <th>Age</th>
                    </tr>
                     <xsl:for-each select="class/employee">
                         <tr>
@@ -19,7 +18,6 @@
                             <td><xsl:value-of select="firstname"/></td>
                             <td><xsl:value-of select="lastname"/></td>
                             <td><xsl:value-of select="nickname"/></td>
-                            <td><xsl:value-of select="age"/></td>
                             <td><xsl:value-of select="salary"/></td>
                         </tr>
                     </xsl:for-each>
