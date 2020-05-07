@@ -1,0 +1,18 @@
+TitleDetail, Price, OrderInfo,Edition{
+    display: block;
+}
+Title{
+    color: blue;
+}
+Author,NewPrice,GetDate, Hours, Minutes{
+    font-weight: bold;
+}
+NewPrice,OldPrice{
+    color: maroon;
+}
+Price,EditionType{
+    color: cornflowerblue;
+}
+Hours, Minutes{
+    color: green;
+}
