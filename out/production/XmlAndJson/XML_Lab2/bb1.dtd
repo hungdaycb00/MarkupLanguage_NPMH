@@ -1,0 +1,6 @@
+<!ELEMENT codelean1 (to,from,subject,message)>
+        <!ELEMENT to (#PCDATA)>
+        <!ELEMENT from (#PCDATA)>
+        <!ELEMENT subject (#PCDATA)>
+        <!ELEMENT message (#PCDATA)>
+<!ENTITY HELLO "how are you">

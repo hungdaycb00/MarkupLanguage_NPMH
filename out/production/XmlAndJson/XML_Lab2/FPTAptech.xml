@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="FPTAptech.xsl" ?>
+<FPTAptech xmlns="https://www.codelean.vn">
+    <Student Sex="Female">
+        <Name>
+            <FName>Dinh</FName>
+            <LName>Anh</LName>
+        </Name>
+        <Age>14</Age>
+    </Student>
+    <Student>
+        <Name>
+            <FName>Phan</FName>
+            <LName>Do</LName>
+        </Name>
+        <Age>14</Age>
+    </Student>
+</FPTAptech>
